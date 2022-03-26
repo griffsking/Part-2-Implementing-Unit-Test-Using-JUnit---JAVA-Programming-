@@ -1,1 +1,1 @@
-# Part-2-Implementing-Unit-Test-Using-JUnit---JAVA-Programming-
+In Eclipse, click File, then Open Projects from File System. For the import source, click Directory and select the CS612JunitTestingLab folder. Hit Finish. Then you can look at the source code from navigating the package explorer and opening the java files.
