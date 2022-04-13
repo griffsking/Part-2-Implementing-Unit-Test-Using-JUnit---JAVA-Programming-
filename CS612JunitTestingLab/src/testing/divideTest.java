@@ -9,10 +9,18 @@ public class divideTest {
 	@Test
 	public void test() {
 		JunitTesting test = new JunitTesting();
-		int output1 = (int) test.divide(6,2);
-		//int output2 = (int) test.divide(5,2);
-		assertEquals(3, output1);
-		//assertEquals(3, output2);
+		int num = 6;
+		int den = 0;
+		try {
+			int output = (int) test.divide(num,den);
+			assertEquals(3, output);
+			if (den <= 0) {
+				throw new ArithmeticException();
+			}
+		}
+		catch (ArithmeticException ae){
+			System.out.print("ArithmeticException");
+		}
 	}
 
 }
